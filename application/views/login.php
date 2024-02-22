@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title> 
+	<title>Welcome login</title> 
 
 	<style type="text/css">
 
@@ -78,15 +78,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 
-<div id="container">
-    <h1>Welcome to CodeIgniter!</h1>
+<h2>Iniciar Sesión</h2>
+<?php echo form_open('login/autenticar'); ?>
+    <label for="username">Usuario:</label>
+    <input type="text" name="username" id="username" required>
+    <br>
+    <label for="password">Contraseña:</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <input type="submit" value="Iniciar Sesión">
+<?php echo form_close(); ?>
 
-    <div id="body">
-        <p>Bienvenido a mi aplicación. Por favor, inicia sesión para continuar.</p>
-        <a href="<?php echo base_url()?>/login ">Iniciar Sesión</a>
-    </div>
-</div>
 
 
 </body>
 </html>
+
+
+
+

@@ -25,10 +25,7 @@ class Welcome extends CI_Controller {
 
 	public function verificar_conexion()
 {
-    if ($this->->initialize()){
-		echo "conexión ok";
-	} else {
-		echo "no ok";}
+    print_r($this->db);
 }
 
 }

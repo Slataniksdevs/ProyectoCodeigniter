@@ -2,8 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$route['default_controller'] = 'welcome';
-$route['verificar-conexion'] = 'welcome/verificar_conexion';
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -26,7 +25,7 @@ $route['verificar-conexion'] = 'welcome/verificar_conexion';
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/codeigniter/';
 
 /*
 |--------------------------------------------------------------------------
